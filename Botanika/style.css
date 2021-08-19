@@ -49,6 +49,33 @@ button {
 
 }
 
+.firstscreen-first-advantage {
+	background-image: url(img/car.svg);
+	position: absolute;
+	width: 82px;
+	height: 52px;
+	left: 120px;
+	top: 682px;
+}
+
+.firstscreen-second-advantage {
+	background-image: url(img/flower.svg);
+	position: absolute;
+	width: 52px;
+	height: 52px;
+	left: 556px;
+	top: 682px;
+}
+
+.firstscreen-third-advantage {
+	background-image: url(img/camera.svg);
+	position: absolute;
+	width: 58.6px;
+	height: 52px;
+	left: 956px;
+	top: 682px;
+}
+
 .popular-buquets {
 
 }
