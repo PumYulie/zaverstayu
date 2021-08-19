@@ -1,0 +1,76 @@
+body {
+
+}
+
+h1 {
+	font-family: Playfair Display;
+	font-weight: normal;
+	font-size: 44px;
+	line-height: 59px;
+	color: #AE7C78;
+}
+
+h2 {
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 48px;
+	letter-spacing: 0.02em;
+	color: #AE7C78;	
+	
+}
+
+button {
+	width: 285px;
+	height: 80px;
+	background: #D89999;
+	border-radius: 40px;
+	border-color: #D89999;  /* уточнить с границей что */
+	color: #FFFFFF;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.first-screen {
+
+}
+
+.first-screen-texts {
+
+}
+
+
+
+.first-screen-advantages {
+
+}
+
+.popular-buquets {
+
+}
+
+.visually-hidden {
+
+}
+
+.discount-h2 {
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 44px;
+	line-height: 59px;
+	letter-spacing: 0.02em;
+	color: #FFFFFF;
+}
+
+.discount-text {
+	background-color: #AE7C78;
+}
+
+.discount-picture {
+	background-image: url(//TODO);
+}
