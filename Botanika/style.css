@@ -1,3 +1,4 @@
+/*
 body {
 	color: #AE7C78;
 	font-family: Montserrat, Arial, sans-serif;
@@ -29,7 +30,7 @@ button {
 	height: 80px;
 	background: #D89999;
 	border-radius: 40px;
-	border-color: #D89999;  /* уточнить с границей что */
+	border-color: #D89999;  
 	color: #FFFFFF;
 	font-family: Montserrat;
 	font-style: normal;
@@ -37,11 +38,13 @@ button {
 	font-size: 16px;
 	line-height: 20px;
 }
+*/
 
 /* a {
 	color:#FFFFFF;
 } */
 
+/*
 header a {
 	color:#AE7C78
 }
@@ -124,3 +127,4 @@ header a {
 	background-color: #AE7C78;
 }
 
+*/
