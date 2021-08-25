@@ -1,108 +1,192 @@
-/*
+
 body {
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
 	color: #AE7C78;
-	font-family: Montserrat, Arial, sans-serif;
 }
 
-h1 {
-	font-family: Playfair Display, Georgia, serif;
-	font-weight: normal;
-	font-size: 44px;
-	line-height: 59px;
+/* базовые теги */
+ul {
+	list-style: none;
+	margin-left: 0%;
+	padding-left: 0%;
+}
+
+a {
+	text-decoration: none;
+	color: #fff
 }
 
 h2 {
-	font-family: Playfair Display;
-	font-style: normal;
+	font-family: "Playfair Display", "Georgia", serif;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 48px;
+	letter-spacing: 0.02em;
+	text-align: center;
+}
+
+h3 {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	
+}
+
+/* базовые классы */
+.visually-hidden {
+	display: none; TODO нормально спрятать
+}
+
+.button {
+	color: #FFFFFF;
+	background-color: #D89999;
+	padding: 30px 70px 30px 69px;
+	border-radius: 40px;
+	border-color: #D89999;
+	cursor:pointer;
+}
+
+button.button {
+	width: 285px;
+	height: 80px;
+}
+
+.larger-text {
+	font-size: 24px;
+	line-height: 29px;
+	text-align: left;
+}
+
+.larger-h2 {
+	font-size: 44px;
+	line-height: 59px;
+	font-weight: 400;
+	letter-spacing: normal;
+	text-align: left;
+}
+
+/* Начались стили по блокам */
+
+/* хэдэр */
+.header {
+	height: 64px;
+	margin-top: 26px;
+	border-top: 1px solid #AE7C78;
+	border-bottom: 1px solid #AE7C78;
+}
+
+.header a {
+	color:#AE7C78;
+}
+
+/* первый экран */
+
+.italic {
+	font-style: italic;
+}
+
+.advantages li:nth-of-type(1)::before {
+	content: "";
+	padding-left: 82px;
+	padding-bottom: 52px;
+	background-image: url(img/car.svg);
+	background-size: 82px;
+	background-repeat: no-repeat;
+}
+
+.advantages li:nth-of-type(2)::before {
+	content: "";
+	padding-left: 34px;
+	padding-bottom: 52px;
+	background-image: url(img/flower.svg);
+	background-size: 34px;
+	background-repeat: no-repeat;
+}
+
+.advantages li:nth-of-type(3)::before {
+	content: "";
+	padding-left: 59px;
+	padding-bottom: 52px;
+	background-image: url(img/camera.svg);
+	background-size: 59px;
+	background-repeat: no-repeat;
+}
+
+/* экран популярные букеты */
+
+.card-title {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+}
+
+.scroll-arrows {
+	text-align: center;
+}
+
+.scroll-arrow {
+	background-color: transparent;
+	border: none;
+	cursor:pointer;
+}
+
+
+/* экран каталога */
+
+.catalog h3 {
+	color: grey; 
+	font-family: "Playfair Display", Georgia, serif;
 	font-weight: bold;
 	font-size: 36px;
 	line-height: 48px;
 	letter-spacing: 0.02em;
 }
-
-.visually-hidden {
-
+/* удалить серый */
+.catalog p { 
+	color: grey;
 }
 
-
-button {
-	width: 285px;
-	height: 80px;
-	background: #D89999;
-	border-radius: 40px;
-	border-color: #D89999;  
-	color: #FFFFFF;
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 20px;
-}
-*/
-
-/* a {
-	color:#FFFFFF;
-} */
-
-/*
-header a {
-	color:#AE7C78
-}
-
-.firstscreen-first-advantage {
-	background-image: url(img/car.svg);
-	width: 82px;
-	height: 52px;
-}
-
-.firstscreen-second-advantage {
-	background-image: url(img/flower.svg);
-	width: 52px;
-	height: 52px;
-}
-
-.firstscreen-third-advantage {
-	background-image: url(img/camera.svg);
-	width: 58.6px;
-	height: 52px;
-}
-
-.discount-h2 {
-
-}
-
-.discount-text {
+/* экран скидка 10% */
+.discount {
 	background-color: #AE7C78;
 }
 
-.discount-image {
-	background-image: url(files/discount-image.jpg);
-	width: 590px;
-	height: 391px;
+.discount .larger-h2 {
+	color:#fff;
 }
 
-.steps-step1 {
+.discount .larger-text {
+	color:#fff;
+}
+
+/* экран 4 шага */
+.steps-icon {
+	height: 52px;
+	background-repeat: no-repeat;
+}
+
+.steps-advantage:nth-of-type(1) .steps-icon {
 	background-image: url(img/screen.svg);
-	Width: 66.08px;
-	Height: 52px;
 }
 
-.steps-step2 {
+.steps-advantage:nth-of-type(2) .steps-icon {
 	background-image: url(img/manager.svg);
-	Width: 37.49px;
-	Height: 52px;
 }
 
-.steps-step3 {
+.steps-advantage:nth-of-type(3) .steps-icon {
 	background-image: url(img/card.svg);
-	Width: 69.93px;
-	Height: 52px;
 }
 
-.steps-step4 {
+.steps-advantage:nth-of-type(4) .steps-icon {
 	background-image: url(img/car.svg);
-	Width: 82.21px;
-	Height: 52px;
+}
+
+/* экран новости */ 
+.news h2 {
+	text-align: left;
 }
 
 .news-picture1{ 
@@ -123,8 +207,39 @@ header a {
 	height: 460px;
 }
 
+/* экран отзывы */
+.reviews {
+	border: 1px solid #AE7C78;
+	margin: 120px 80px;
+}
+
+.review-text {
+	text-align: center;
+}
+
+.review-text cite {
+	font-weight: 500;
+	font-style: normal;
+}
+
+/* карта */
+.contacts-bkg {
+	background-color: #F7FAFC;
+	box-shadow: 0px 4px 40px rgba(217, 217, 217, 0.3);
+	border-radius: 12px;
+	width: 386px;
+	height: 520px;
+}
+
+.larger-contacts {
+	font-weight: 500;
+}
+
+.map a {
+	color:#AE7C78;
+}
+
+/* футтер */
 .footer {
 	background-color: #AE7C78;
 }
-
-*/
